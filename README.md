@@ -40,6 +40,8 @@ def preprocess_text(text):
 
 	stemmed_words= [stemmer. stem(word) for word in filtered_words]
 	return stemmed_words
+```
+```
 def generate_summary(text,num_sentences=3):
 
 	sentences= sent_tokenize(text)
@@ -60,6 +62,8 @@ def generate_summary(text,num_sentences=3):
 	summary_sentences= sorted(sentence_scores, key=sentence_scores.get,reverse=True) [ : num_sentences]
 
 	return ' '. join(summary_sentences)
+```
+```
 if __name__=="__main__":
 	input_text ="""
 	Natural language processing (NLP) is a subfield of artificial intelligence.
